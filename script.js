@@ -1,51 +1,19 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Get all the dropdown buttons
-    var dropdownButtons = document.querySelectorAll('.dropbtn');
-  
-    // Attach a click event listener to each dropdown button
-    dropdownButtons.forEach(function(button) {
-      button.onclick = function() {
-        // This toggles the dropdown for the clicked button
-        this.nextElementSibling.classList.toggle("show");
-      }
-    });
-  
-    // Close the dropdowns if the user clicks outside of them
-    // window.onclick = function(event) {
-    //   if (!event.target.matches('.dropbtn')) {
-    //     var dropdownContents = document.querySelectorAll(".dropdown-content");
-    //     dropdownContents.forEach(function(content) {
-    //       if (content.classList.contains('show')) {
-    //         content.classList.remove('show');
-    //       }
-    //     });
-    //   }
-    // }
-  });
-  
-document.querySelectorAll('.table-header').forEach(header => {
-  header.addEventListener('click', () => {
-    let contentRows = header.nextElementSibling.querySelectorAll('.table-content');
-      contentRows.forEach(row => {
-      row.style.display = row.style.display === 'table-row' ? 'none' : 'table-row';
-    });
-  });
+//JavaScript to Control the Carousel
+var myCarousel = document.getElementById('myCarousel');
+// Initialize the Bootstrap carousel
+var carousel = new bootstrap.Carousel(myCarousel, {
+  interval: 1000,  // Time between slides in milliseconds
+  ride: 'carousel' // Enables automatic sliding (you can change it to false if you don't want it to auto-ride)
 });
-
-//Typewriter Animation
-// document.addEventListener("DOMContentLoaded", function() {
-//     const text = "Data Engineer, Web Developer, Freelance Artist";
-//     const typewriterElement = document.getElementById("professions");
-//     let index = 0;
-//     const speed = 75; // Adjust typing speed here (milliseconds): lower = fastest
-
-//     function typeWriter() {
-//         if (index < text.length) {
-//             typewriterElement.textContent += text.charAt(index);
-//             index++;
-//             setTimeout(typeWriter, speed);
-//         }
-//     }
-
-//     typeWriter();
-// });
+// To manually cycle the carousel
+function cycleCarousel() {
+  carousel.next();  // Move to the next slide
+}
+// Example: Manually pause the carousel
+function pauseCarousel() {
+  carousel.pause();
+}
+// Example: Manually start the carousel
+function startCarousel() {
+  carousel.cycle();
+}
