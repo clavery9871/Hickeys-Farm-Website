@@ -35,6 +35,32 @@ body, html {
   text-align: center;
 }
 
+
+
+
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+#dropdownMenuButton {
+  background-color: lightgreen;
+  padding: 8px;
+  margin-bottom: 8px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.dropdown-menu.show {
+  background-color: lightgreen;
+  /* border: none; */
+  z-index: 1;
+}
+
+
+
+
 #contactDetails {
   padding-top: 20px;
   text-align: center;

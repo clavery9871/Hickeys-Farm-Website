@@ -9,11 +9,11 @@ var carousel = new bootstrap.Carousel(myCarousel, {
 function cycleCarousel() {
   carousel.next();  // Move to the next slide
 }
-// Example: Manually pause the carousel
-function pauseCarousel() {
-  carousel.pause();
-}
-// Example: Manually start the carousel
+// Manually start the carousel
 function startCarousel() {
   carousel.cycle();
+}
+// Manually pause the carousel
+function pauseCarousel() {
+  carousel.pause();
 }
