@@ -9,14 +9,14 @@
 </head>
 <body>
     <div class="container-fluid p-0">
-        <div class="sidebar">
+        <div class="sidebar" id="sidebar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
           <!-- Sidebar content here, e.g., contact information -->
           <section id="logo">
             <img src="images/hickeysLogo.png">
           </section>
           <section id="openingHours">
             <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle text-center" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">Opening Hours</button>
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="openingHoursButton" data-bs-toggle="dropdown" aria-expanded="false">Opening Hours</button>
               <ul class="dropdown-menu text-center">
                 <li class="dropdown-item">Mon-Sat: 08:00 - 19:00</li>
                 <li class="dropdown-item">Sunday: Closed</li>
@@ -24,16 +24,23 @@
             </div>
           </section>
           <section id="contactDetails">
-            <h2>Contact Details</h2>
-            <hr>
-            <h4>Yard: +353 876691782</h4>
-            <h4>Farm Shop: +353 876691782</h4>
-            <h4>Field: +353 876691782 | +353 475839205</h4>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="contactsDetailsButton" data-bs-toggle="dropdown" aria-expanded="false">Contact Details</button>
+              <ul class="dropdown-menu text-center">
+                <li class="dropdown-item">Yard: +353 876691782</li>
+                <li class="dropdown-item">Farm Shop: +353 876691782</li>
+                <li class="dropdown-item">Field: +353 876691782</li>
+                <li class="dropdown-item">+353 475839205</li>
+              </ul>
+            </div>
           </section>
           <section id="location">
-            <h2>Location</h2>
-            <hr>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4483.759313297573!2d-6.556955888661817!3d53.854636869924676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48674ba7e8a0bce9%3A0x601ade4599a3008d!2sHickeys%20Home%20Farm!5e0!3m2!1sen!2sie!4v1743111197469!5m2!1sen!2sie" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="locationButton" data-bs-toggle="dropdown" aria-expanded="false">Location</button>
+              <ul class="dropdown-menu text-center">
+                <li class="dropdown-item"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4483.759313297573!2d-6.556955888661817!3d53.854636869924676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48674ba7e8a0bce9%3A0x601ade4599a3008d!2sHickeys%20Home%20Farm!5e0!3m2!1sen!2sie!4v1743111197469!5m2!1sen!2sie" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></li>
+              </ul>
+            </div>
           </section>
         </div>
         <div class="content">

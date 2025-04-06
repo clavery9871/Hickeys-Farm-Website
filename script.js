@@ -17,3 +17,20 @@ function startCarousel() {
 function pauseCarousel() {
   carousel.pause();
 }
+
+
+let mini = true;
+// Sidebar animation
+function toggleSidebar(){
+  if (mini) {
+    console.log('Opening sidebar');
+    console.log(mini);
+    document.getElementById('sidebar').style.width = "1500px";
+    mini = false;
+  } else {
+    console.log('Closing sidebar');
+    console.log(mini);
+    document.getElementById('sidebar').style.width = "300px";
+    mini = true;
+  }
+}

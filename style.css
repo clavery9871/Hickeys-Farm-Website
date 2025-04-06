@@ -10,7 +10,7 @@ body, html {
   
 .sidebar {
   padding: 20px;
-  min-width: 300px; /* Adjust width as needed */
+  width: 300px;
   overflow-y: auto;
   background-color: lightgreen;
   color: white;
@@ -44,7 +44,7 @@ body, html {
   flex-direction: column;
 }
 
-#dropdownMenuButton {
+#openingHoursButton {
   background-color: lightgreen;
   padding: 8px;
   margin-bottom: 8px;
@@ -58,12 +58,17 @@ body, html {
   z-index: 1;
 }
 
-
-
-
 #contactDetails {
   padding-top: 20px;
   text-align: center;
+}
+
+#contactsDetailsButton {
+  background-color: lightgreen;
+  padding: 8px;
+  margin-bottom: 8px;
+  border: 1px solid white;
+  cursor: pointer;
 }
 
 #location {
@@ -71,11 +76,19 @@ body, html {
   text-align: center;
 }
 
+#locationButton {
+  background-color: lightgreen;
+  padding: 8px;
+  margin-bottom: 8px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
 #location iframe{
   max-width: 100%;
   height: 200px;
 }
-    
+
 .content {
   overflow-y: auto;
   padding: 20px 40px;
